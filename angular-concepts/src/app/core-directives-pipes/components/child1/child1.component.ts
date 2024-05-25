@@ -12,16 +12,21 @@ export interface person{
 })
 export class Child1Component {
 
-  @Input({
-    required:true
-  }) 
-  data1 = ''
+  // @Input({
+  //   required:true
+  // }) 
+  // data1 = ''
 
   @Output("data2")
   data_ = new EventEmitter<person>()
 
   @Output()
   courseName = new EventEmitter<string>()
+
+  @Input({
+    required: true
+  })
+  loopData:any
 
   updateOutput(){
     this.data_.emit({name:"Dhanashri", employeeId:123})

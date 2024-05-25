@@ -26,4 +26,43 @@ export class HomeComponent {
   getCourseName(data:any){
     this.course_name = data
   }
+
+  //Checking for loop in template
+  arrayNames : any = [
+    {name:"Dhanashri", id:1}, 
+    {name:"Harry", id:2}, 
+    {name:"Reena", id:3}, 
+    {name:"Peter", id:4}
+  ]
+
+  //Checking if, else if and else in template
+  employeeId = 2
+  isIdOne(){
+    return this.employeeId == 1
+  }
+
+  //Checking ngClass
+  border = false
+  padding = false
+  background = true
+  applyClass(){
+    if(this.border && this.padding && this.background)
+      return ['borderClass', 'paddingClass', 'backColor']
+    else if(this.padding && this.background)
+      return ['paddingClass', 'backColor']
+    else  
+      return 'backColor'
+  }
+
+  //Checking ngStyle
+  applyStyles(){
+    return {
+      'border':'solid 5px #808080',
+      'background-color':'red',
+      'color':'#fff'
+    }
+  }
+
+  //Checking @switch
+  courseId = 0
 }

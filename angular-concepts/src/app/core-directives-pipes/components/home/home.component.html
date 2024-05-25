@@ -1,0 +1,9 @@
+<p>home works!</p>
+<br><br>
+<p>Person Data:</p>
+<p>Name: {{personData.name}}</p>
+<p>Emploee Id: {{personData.employeeId}}</p>
+<br><br>
+<p>Course Name: {{course_name}}</p>
+
+<app-child1 [data1]="child1Data" (data2)="getData($event)" (courseName)="getCourseName($event)"></app-child1>

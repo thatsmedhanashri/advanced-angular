@@ -9,5 +9,9 @@ export const routes: Routes = [
     {
         path:'directives-pipes',
         loadChildren: () => import('./core-directives-pipes/core-directives-pipes.module').then(m => m.CoreDirectivesPipesModule)
+    },
+    {
+        path: 'template-query',
+        loadChildren: () => import('./template-querying/template-querying.module').then(m => m.TemplateQueryingModule)
     }
 ];

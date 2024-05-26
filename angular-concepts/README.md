@@ -1,6 +1,6 @@
 ## Added angular material
 npx ng add @angular/material
-Implemented by Google, it is UI library which includes multiple in-build components easy to use.
+Implemented by Google, it is UI library which includes multiple in-built components easy to use.
 Responsive - compatible with android, ios, tablets, laptops
 We can customise it rewriting the css
 
@@ -99,3 +99,6 @@ The app. config. ts file is where you will set up your external dependencies, li
 ## .gitkeep
 It is kept by git to ensure blank/empty directories are never added remotely when pushing changes. Git will only find .gitkeep entries in bare folders. Once Git sees a blank/empty folder with a gitkeep file, it'll add it to subsequent commits or pushes.
 It is true that using a .gitkeep file is a bit of a hack, but there is no doubt that it is an effective solution. This is only a workaround to the problem since there is no direct fix at hand. As long as this file is present in a folder, it's not blank/empty, is it? Because the blank/empty folder is not really blank/empty, we are going to include it anyway. Despite its logical contradictions, this has become a commonly used convention for Git.
+
+## Standalone Component
+When we create new component in angular 17 it is by default standalone. The main benefit of standalone components is that they make it trivial to develop a fully lazy-loaded application, or migrate an existing application and make it fully lazy-loaded.
